@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <!-- Constraint the top of the second button below the first button -->
+
+
+    <Button
+        android:id="@+id/home_doc"
+        android:layout_width="384dp"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:contentDescription="Doctor"
+        android:drawableLeft="@drawable/doctor"
+        android:elevation="8dp"
+        android:text="My Doctor"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <Button
+        android:id="@+id/home_lab"
+        android:layout_width="383dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:contentDescription="Doctor"
+        android:drawableLeft="@drawable/lab"
+        android:elevation="8dp"
+        android:text="Lab tests"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_doc" />
+
+    <Button
+        android:id="@+id/home_reminder"
+        android:layout_width="383dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:contentDescription="Doctor"
+        android:drawableLeft="@drawable/reminder"
+        android:elevation="8dp"
+        android:text="Med Reminder"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_lab" />
+
+    <Button
+        android:id="@+id/home_heartTrend"
+        android:layout_width="388dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:contentDescription="Doctor"
+        android:drawableLeft="@drawable/heart_trend"
+        android:elevation="8dp"
+        android:text="Heart Trend"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_reminder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
